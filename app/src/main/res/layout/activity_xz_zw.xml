@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#141931"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.XzZwActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/zw_back"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="28dp"
+                android:src="@mipmap/back"
+                android:layout_width="16dp"
+                android:layout_height="16dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/zw_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="复仇者联盟"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+                    android:id="@+id/zw_JC"
+                    android:layout_width="280dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="21dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/zw_xuan"
+                    android:layout_width="272dp"
+                    android:layout_height="208dp"
+                    android:layout_marginTop="70dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/zw_ying"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="500dp"
+                android:text="选择影厅和时间(6)"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/zw_recycler_ying"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="574dp"></androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/zw_price"
+                android:layout_alignParentBottom="true"
+                android:background="#e8185e"
+                android:text="$132.6"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:layout_marginTop="679dp"
+                android:layout_width="match_parent"
+                android:layout_height="36dp" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

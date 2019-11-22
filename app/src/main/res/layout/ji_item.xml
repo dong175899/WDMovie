@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:background="@null"
+    android:id="@+id/linear_two"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="10dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content">
+   <RelativeLayout
+       android:layout_marginLeft="20dp"
+       android:layout_gravity="center_horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <RelativeLayout
+           android:layout_centerHorizontal="true"
+           android:background="@drawable/rela"
+           android:layout_marginTop="40dp"
+           android:layout_width="312dp"
+           android:layout_height="98dp">
+
+           <TextView
+               android:layout_marginLeft="118dp"
+               android:textSize="14sp"
+               android:textColor="#fff"
+               android:gravity="center_horizontal"
+               android:id="@+id/tv_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/tv_data"
+               android:textColor="#fff"
+               android:layout_marginLeft="118dp"
+               android:layout_marginTop="45dp"
+               android:textSize="12sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:layout_marginLeft="118dp"
+               android:layout_marginTop="72dp"
+               android:id="@+id/tv_look"
+               android:textColor="#fff"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:layout_toRightOf="@+id/tv_look"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="72dp"
+               android:text="人想看"
+               android:textColor="#fff"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+           <Button
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="20dp"
+               android:layout_alignParentBottom="true"
+               android:layout_marginBottom="10dp"
+               android:layout_alignParentRight="true"
+               android:layout_gravity="center_horizontal"
+               android:background="@drawable/button"
+               android:text="预约"
+               android:textSize="12sp"
+               android:textColor="#fff"
+               android:layout_width="45dp"
+               android:layout_height="20dp"/>
+
+       </RelativeLayout>
+       <com.facebook.drawee.view.SimpleDraweeView
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="10dp"
+           android:id="@+id/img_bi"
+           android:layout_width="88dp"
+           android:layout_height="108dp"/>
+
+   </RelativeLayout>
+
+
+
+</LinearLayout>

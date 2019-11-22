@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.XiangActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.facebook.drawee.view.SimpleDraweeView
+
+                    android:id="@+id/xq_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="499dp" />
+                <RelativeLayout
+                    android:id="@+id/one"
+                    android:layout_marginTop="449dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="23dp"
+                        android:layout_marginLeft="50dp"
+                        android:text="评分"
+                        android:textColor="#ffffff"
+                        android:layout_width="24dp"
+                        android:layout_height="17dp" />
+                    <TextView
+                        android:id="@+id/xq_pf"
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="23dp"
+                        android:layout_marginLeft="84dp"
+                        android:text="9.8分"
+                        android:textColor="#ffffff"
+                        android:layout_width="30dp"
+                        android:layout_height="17dp" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="23dp"
+                        android:layout_marginLeft="213dp"
+                        android:text="评论"
+                        android:textColor="#ffffff"
+                        android:layout_width="24dp"
+                        android:layout_height="17dp" />
+                    <TextView
+                        android:id="@+id/xq_pl"
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="23dp"
+                        android:layout_marginLeft="256dp"
+                        android:text="11.8万条"
+                        android:textColor="#ffffff"
+                        android:layout_width="45dp"
+                        android:layout_height="17dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="#141931"
+                    android:layout_marginTop="499dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="101dp">
+                    <TextView
+                        android:id="@+id/xq_name"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="74dp"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        android:text="复仇者联盟4:终局之战"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/xq_lx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="37dp"
+                        android:text="剧情 / 喜剧"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/x1_time"
+                        android:layout_marginLeft="132dp"
+                        android:layout_marginTop="37dp"
+                        android:textColor="#fff"
+                        android:layout_marginBottom="47dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/xq_shijian"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="64dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        android:text="复仇者联盟4:终局之战"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:background="@mipmap/emptyheart"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="311dp"
+                        android:layout_marginTop="29dp"
+                        android:layout_height="19dp" />
+                    <TextView
+                        android:text="已关注"
+                        android:textColor="#fff"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="306dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="600dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/xq_tab"
+                        app:tabTextColor="#ffffff"
+                        app:tabSelectedTextColor="#fff"
+                        android:background="#1c2243"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp">
+
+                    </com.google.android.material.tabs.TabLayout>
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/xq_pager"
+                        android:layout_marginTop="44dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="575dp">
+
+                    </androidx.viewpager.widget.ViewPager>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="39dp">
+        <Button
+            android:id="@+id/tv_text_yp"
+            android:text="写影评"
+            android:textSize="14sp"
+            android:background="#e8be18"
+            android:layout_width="150dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="选座购票"
+            android:textSize="14sp"
+            android:id="@+id/xq_goupiao"
+            android:background="#e8185e"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.stx.xhb.androidx.XBanner
+        android:layout_centerHorizontal="true"
+        android:id="@+id/x_banner"
+        android:layout_width="280dp"
+        android:layout_height="150dp"/>
+    <TextView
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="318dp"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:text="3/4"
+        android:layout_width="22dp"
+        android:layout_height="20dp"/>
+</RelativeLayout>
